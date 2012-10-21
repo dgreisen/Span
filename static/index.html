@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>share-connect test</title>
+	<script src="bcsocket.js"></script>
+	<script src="webclient/share.js"></script>
+	<script src="webclient/textarea.js"></script>
+</head>
+<body>
+	<h1>Share-Connect Test</h1>
+	<textarea id='sharetext' ></textarea>
+	<script>
+		var elem = document.getElementById("sharetext");
+		var connection = sharejs.open('test', 'text', function(error, doc) {
+			if (error) {
+				console.log("ERROR:", error);
+			} else {
+				console.log('attaching');
+				doc.attach_textarea(elem);
+			}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "share-connect",
+  "version": "0.0.1",
+  "description": "A middleware stack for ShareJs",
+  "keywords": [],
+  "homepage": "",
+  "author": "David Greisen <dgreisen@gmail.com>",
+  "main": "lib/index.js",
+  "bin": {},
+  "dependencies": {
+    "share": ">= 0.5.0",
+    "connect": "~1"
+  },
+  "devDependencies": {
+    "browserchannel": "*"
+  },
+  "engine": "node >= 0.6",
+  "scripts": {
+    "build": "cake build"
+  },
+  "licenses": [{
+    "type": "Apache 2",
+    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+  }],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/dgreisen/share-connect.git"
+  }
+}
