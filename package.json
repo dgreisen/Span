@@ -1,7 +1,7 @@
 {
-  "name": "share-connect",
-  "version": "0.0.1",
-  "description": "A middleware stack for ShareJs",
+  "name": "span",
+  "version": "0.1.0",
+  "description": "A middleware stack for ShareJS",
   "keywords": [],
   "homepage": "",
   "author": "David Greisen <dgreisen@gmail.com>",
@@ -12,11 +12,13 @@
     "connect": "~1"
   },
   "devDependencies": {
-    "browserchannel": "*"
+    "browserchannel": "*",
+    "nodeunit": "*"
   },
   "engine": "node >= 0.6",
   "scripts": {
-    "build": "cake build"
+    "build": "cake build",
+    "test": "nodeunit tests/span.coffee",
   },
   "licenses": [{
     "type": "Apache 2",
