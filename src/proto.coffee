@@ -34,7 +34,6 @@ auth.DELETE = (regexp, fn) ->
 auth.handle = (agent, action, out) ->
 	stack = this.stack
 	index = 0
-	console.log("-------------------------------------------------")
 	next = (err) ->
 		# next callback
 		layer = stack[index++]
@@ -43,7 +42,6 @@ auth.handle = (agent, action, out) ->
 		if action.responded
 			return
 		else if not layer
-			console.log("made to end")
 			# delegate to parent
 			if out then return out(err)
 
