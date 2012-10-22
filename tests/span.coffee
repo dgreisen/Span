@@ -118,7 +118,7 @@ module.exports =
 
     @authorizer @agent, @action
 
-  "middleware specified with a regexp will will be skipped in there is no action.docName": (test) ->
+  "middleware specified with a regexp will be skipped if there is no action.docName": (test) ->
     @authorizer.use /debug/, (agent, action, next) ->
       agent.firstAttr = true
       next()
